@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv() # reads .env from the current folder into the environment
+
 from openai import OpenAI
 import os
 
