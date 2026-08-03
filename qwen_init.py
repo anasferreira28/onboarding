@@ -8,9 +8,10 @@ qwen_client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=os.environ
 
 def ask_qwen(prompt: str, model: str = "qwen/qwen3.6-27b", thinking: bool = True) -> str:
     resp = qwen_client.chat.completions.create(model=model, messages=[{"role": "user", "content": prompt}],
+                                               max_tokens=3000,
                                                extra_body={"reasoning": {"enabled": thinking}}, # OpenRouter's toggle for reasoning-capable models
 )
     return resp.choices[0].message.content
 
 
-print(ask_qwen("Hello, introduce yourself in one sentence."))
+print(ask_qwen("Explain the difference between HER2-positive and triple-negative breast cancer in 3 sentences, then list 2first-line treatment classes for each."))
