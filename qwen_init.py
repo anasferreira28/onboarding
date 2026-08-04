@@ -1,3 +1,9 @@
+"""
+Loads the OpenRouter API key from the .env file and initializes the OpenAI client for the Qwen model (since it cannot run locally). 
+The ask_qwen function sends a prompt to the Qwen model and returns the response. 
+The example at the end demonstrates how to use the function to get an explanation of breast cancer subtypes and their treatments.
+"""
+
 from dotenv import load_dotenv
 load_dotenv() # reads .env from the current folder into the environment
 
