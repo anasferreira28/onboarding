@@ -5,10 +5,12 @@ The example at the end demonstrates how to use the function to get an explanatio
 """
 
 from dotenv import load_dotenv
+from pypdf import PdfReader
 load_dotenv() # reads .env from the current folder into the environment
 
 from openai import OpenAI
 import os
+from pdf_reader import paper_text
 
 qwen_client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=os.environ["OPENROUTER_API_KEY"],) #call to OpenRouter's API with your API key
 
@@ -20,4 +22,11 @@ def ask_qwen(prompt: str, model: str = "qwen/qwen3.6-27b", thinking: bool = True
     return resp.choices[0].message.content
 
 
-print(ask_qwen("Extract the following fields as JSON from this pathology snippet: {tumor_size_cm, histologic_grade, ER_status, PR_status, HER2_status, lymph_nodes_positive}. Snippet: 'Invasive ductal carcinoma, 2.3 cm, Nottingham grade 2. ER positive (90%), PR positive (60%), HER2 negative (IHC 1+). 1 of 14 sentinel lymph nodes positive.'", thinking=True))
+#print(ask_qwen("Extract the following fields as JSON from this pathology snippet: {tumor_size_cm, histologic_grade, ER_status, PR_status, HER2_status, lymph_nodes_positive}. Snippet: 'Invasive ductal carcinoma, 2.3 cm, Nottingham grade 2. ER positive (90%), PR positive (60%), HER2 negative (IHC 1+). 1 of 14 sentinel lymph nodes positive.'", thinking=True))
+
+### FOR EXERCISE 2.4
+
+summarize_prompt = ("Summarize this paper's methods, key result, and one limitation in under 150 words.\n\n" + paper_text)
+
+print(ask_qwen(summarize_prompt))
+
