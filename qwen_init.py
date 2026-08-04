@@ -20,4 +20,4 @@ def ask_qwen(prompt: str, model: str = "qwen/qwen3.6-27b", thinking: bool = True
     return resp.choices[0].message.content
 
 
-print(ask_qwen("Explain BI-RADS categories briefly.", thinking=False))
+print(ask_qwen("Roughly what fraction of breast cancer diagnoses show HER2 positivity? Give a number and how confident you are (0-100%).", thinking=True))
