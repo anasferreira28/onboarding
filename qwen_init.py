@@ -20,4 +20,4 @@ def ask_qwen(prompt: str, model: str = "qwen/qwen3.6-27b", thinking: bool = True
     return resp.choices[0].message.content
 
 
-print(ask_qwen("Roughly what fraction of breast cancer diagnoses show HER2 positivity? Give a number and how confident you are (0-100%).", thinking=True))
+print(ask_qwen("Extract the following fields as JSON from this pathology snippet: {tumor_size_cm, histologic_grade, ER_status, PR_status, HER2_status, lymph_nodes_positive}. Snippet: 'Invasive ductal carcinoma, 2.3 cm, Nottingham grade 2. ER positive (90%), PR positive (60%), HER2 negative (IHC 1+). 1 of 14 sentinel lymph nodes positive.'", thinking=True))

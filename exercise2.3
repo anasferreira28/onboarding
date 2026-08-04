@@ -1,0 +1,36 @@
+Exercise 2.3 — Structured JSON extraction (mirrors the synoptic-report extraction paper in Part 3)
+
+Extract the following fields as JSON from this pathology snippet: {tumor_size_cm, histologic_grade, ER_status,
+PR_status, HER2_status, lymph_nodes_positive}.
+
+Snippet: "Invasive ductal carcinoma, 2.3 cm, Nottingham grade 2. ER positive (90%), PR positive (60%), HER2
+negative (IHC 1+). 1 of 14 sentinel lymph nodes positive."
+
+
+Run this on both Qwen and Gemma. Check: valid JSON? Correct field values? Any hallucinated fields not present in
+the text?
+
+>>>>> Qwen
+
+```json
+{
+  "tumor_size_cm": 2.3,
+  "histologic_grade": 2,
+  "ER_status": "Positive",
+  "PR_status": "Positive",
+  "HER2_status": "Negative",
+  "lymph_nodes_positive": 1
+}
+```
+>>>>>> Gemma
+
+```json
+{
+  "tumor_size_cm": 2.3,
+  "histologic_grade": 2,
+  "ER_status": "Positive (90%)",
+  "PR_status": "Positive (60%)",
+  "HER2_status": "Negative (IHC 1+)",
+  "lymph_nodes_positive": 1
+}
+```
