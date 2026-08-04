@@ -1,0 +1,148 @@
+Exercise 2.1 — Thinking vs. non-thinking mode (Qwen3.6)
+
+in qwen_init.py file:
+
+print(ask_qwen("Explain BI-RADS categories briefly.", thinking=True))
+print(ask_qwen("Explain BI-RADS categories briefly.", thinking=False))
+
+
+Compare answer quality, verbosity, and latency between the two. 
+
+Note: Qwen3.6 no longer uses the older /think / /no_think text-based switch 
+from Qwen3 — OpenRouter's reasoning.enabled parameter (used in ask_qwen()) 
+is the reliable way to control it now.
+
+THINKING:
+
+Here's a thinking process:
+
+1.  **Understand User Request:** The user wants a brief explanation of BI-RADS categories. BI-RADS stands for Breast Imaging-Reporting and Data System, developed by the American College of Radiology (ACR). It's a standardized system for reporting breast imaging studies (mammography, ultrasound, MRI) to ensure consistency and clear communication.
+
+2.  **Identify Key Components of BI-RADS:**
+   - Purpose: Standardize reporting, communicate risk of malignancy, guide next steps
+   - Categories: 0 to 6 (sometimes A for assessment)
+   - Each category has a specific meaning, risk percentage, and recommended action
+   - Need to keep it brief as requested
+
+3.  **Recall/Verify BI-RADS Categories:**
+   - **BI-RADS 0:** Incomplete – needs additional imaging or prior comparison
+   - **BI-RADS 1:** Negative – no findings
+   - **BI-RADS 2:** Benign – definitely not cancer, routine screening
+   - **BI-RADS 3:** Probably benign – <2% risk of malignancy, short-interval follow-up (usually 6 months)
+   - **BI-RADS 4:** Suspicious – biopsy recommended (subdivided into 4A, 4B, 4C based on risk: low, moderate, high)
+   - **BI-RADS 5:** Highly suggestive of malignancy – >95% risk, appropriate action (biopsy/treatment)
+   - **BI-RADS 6:** Known biopsy-proven malignancy – pre-treatment staging or monitoring
+   - *(Note: BI-RADS A is sometimes used for screening mammography assessment but not a standard category for reporting findings; I'll stick to 0-6)*
+
+4.  **Structure the Response:**
+   - Brief intro: What BI-RADS is
+   - List categories 0-6 with:
+     - Name/label
+     - Meaning
+     - Risk of cancer (if applicable)
+     - Recommended next step
+   - Keep it concise and clear
+   - Add a short note about purpose/usage
+
+5.  **Draft the Response (Mental Refinement):**
+   BI-RADS (Breast Imaging-Reporting and Data System) is a standardized system used by radiologists to report breast imaging results (mammograms, ultrasounds, MRIs). It classifies findings into categories 0–6, each indicating the likelihood of cancer and recommended next steps:
+
+   - **0: Incomplete** – Needs additional imaging or comparison with prior exams.
+   - **1: Negative** – No abnormalities found. Routine screening continues.
+   - **2: Benign** – Non-cancerous findings (e.g., cysts, fibroadenomas). Routine screening.
+   - **3: Probably Benign** – <2% chance of cancer. Short-interval follow-up (usually 6 months) to confirm stability.
+   - **4: Suspicious** – Abnormal finding needing biopsy. Subdivided into 4A (low suspicion), 4B (moderate), 4C (high) based on cancer risk.
+   - **5: Highly Suggestive of Malignancy** – >95% chance of cancer. Prompt biopsy and treatment planning.
+   - **6: Known Biopsy-Proven Cancer** – Used when cancer is already confirmed; imaging monitors treatment response or assesses extent.
+
+   BI-RADS ensures consistent communication between providers and helps guide appropriate clinical follow-up. Always discuss results with your healthcare provider for personalized interpretation.
+
+6.  **Check Accuracy & Conciseness:**
+   - Categories 0-6 correctly described
+   - Risk percentages accurate (<2% for 3, >95% for 5)
+   - Next steps aligned with ACR guidelines
+   - Brief as requested
+   - Added practical note about consulting a provider (standard medical disclaimer/ethical practice)
+   - No fluff, clear structure
+
+   Everything looks solid. Ready to output. All facts verified against current ACR BI-RADS standards. No outdated info. Subcategories for 4 are mentioned but kept brief. Risk percentages are correctly associated. Follow-up recommendations match guidelines. 
+
+   Output matches the refined draft.✅
+</think>
+
+**BI-RADS** (Breast Imaging-Reporting and Data System) is a standardized system created by the American College of Radiology to ensure consistent reporting of breast imaging studies (mammography, ultrasound, MRI). Each category indicates the likelihood of malignancy and recommended clinical action:
+
+| Category | Meaning | Cancer Risk | Recommended Action |
+|----------|---------|-------------|-------------------|
+| **0** | Incomplete | N/A | Additional imaging or comparison with prior exams needed |
+| **1** | Negative | ~0% | No findings; continue routine screening |
+| **2** | Benign | ~0% | Non-cancerous findings; routine screening |
+| **3** | Probably Benign | <2% | Short-interval follow-up (usually 6 months) |
+| **4** | Suspicious | 2–95% | Biopsy recommended (subdivided: 4A low, 4B moderate, 4C high suspicion) |
+| **5** | Highly Suggestive of Malignancy | >95% | Prompt biopsy and appropriate treatment |
+| **6** | Known Biopsy-Proven Malignancy | 100% | Used for pre-treatment staging or monitoring known cancer |
+
+**Key Notes:**
+- BI-RADS applies to imaging findings, not clinical diagnosis.
+- Categories guide next steps but don't replace provider discussion.
+- Always review your report with your healthcare team for context-specific advice.
+
+Let me know if you'd like details on how each imaging modality uses BI-RADS or how to interpret a specific report.
+
+NON-THINKING:
+
+**BI-RADS** (Breast Imaging-Reporting and Data System) is a standardized system used by radiologists to report breast imaging results (mammograms, ultrasounds, MRIs). It assigns a category from **0 to 6** based on the likelihood of malignancy.
+
+Here is a brief explanation of each category:
+
+### **Category 0: Incomplete**
+- **Meaning:** Additional imaging evaluation or comparison with prior exams is needed.
+- **Action:** Not a final assessment; follow-up imaging is required.
+
+### **Category 1: Negative**
+- **Meaning:** No abnormalities detected.
+- **Risk:** Essentially 0% chance of cancer.
+- **Action:** Routine screening (e.g., annual mammogram).
+
+### **Category 2: Benign**
+- **Meaning:** Abnormalities are present but are clearly non-cancerous (e.g., simple cysts, calcified fibroadenomas).
+- **Risk:** Essentially 0% chance of cancer.
+- **Action:** Routine screening.
+
+### **Category 3: Probably Benign**
+- **Meaning:** Findings have a very low suspicion for malignancy (<2% risk).
+- **Risk:** <2% chance of cancer.
+- **Action:** Short-interval follow-up (usually in 6 months) to ensure stability.
+
+### **Category 4: Suspicious Abnormality**
+- **Meaning:** Biopsy should be considered. This category is subdivided into 4A, 4B, and 4C based on increasing suspicion:
+  - **4A:** Low suspicion (2–10% risk).
+  - **4B:** Moderate suspicion (10–50% risk).
+  - **4C:** High suspicion (50–95% risk).
+- **Action:** Tissue biopsy is recommended.
+
+### **Category 5: Highly Suggestive of Malignancy**
+- **Meaning:** Findings have a very high probability of being cancer (>95% risk).
+- **Risk:** >95% chance of cancer.
+- **Action:** Appropriate action (biopsy/surgery) must be taken.
+
+### **Category 6: Known Biopsy-Proven Malignancy**
+- **Meaning:** Cancer has already been confirmed by biopsy.
+- **Context:** Used when imaging is performed after diagnosis but before treatment (e.g., to assess extent of disease or response to neoadjuvant therapy).
+- **Action:** Treatment planning.
+
+---
+
+### **Summary Table**
+
+| Category | Assessment | Risk of Cancer | Recommended Action |
+|----------|------------|----------------|--------------------|
+| **0**    | Incomplete | N/A            | Further imaging needed |
+| **1**    | Negative   | ~0%            | Routine screening |
+| **2**    | Benign     | ~0%            | Routine screening |
+| **3**    | Probably Benign | <2%        | Short-term follow-up (6 months) |
+| **4**    | Suspicious | 2–95%          | Biopsy recommended |
+| **5**    | Highly Suggestive of Malignancy | >95% | Appropriate action (biopsy/treatment) |
+| **6**    | Known Proven Malignancy | 100% | Pre-treatment imaging |
+
+**Note:** BI-RADS categories help standardize communication between radiologists and clinicians, ensuring consistent management plans for patients. Always consult with a healthcare provider for interpretation of individual results.

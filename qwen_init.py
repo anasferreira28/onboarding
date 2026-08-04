@@ -20,4 +20,4 @@ def ask_qwen(prompt: str, model: str = "qwen/qwen3.6-27b", thinking: bool = True
     return resp.choices[0].message.content
 
 
-print(ask_qwen("Explain the difference between HER2-positive and triple-negative breast cancer in 3 sentences, then list 2first-line treatment classes for each."))
+print(ask_qwen("Explain BI-RADS categories briefly.", thinking=False))
