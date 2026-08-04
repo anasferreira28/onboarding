@@ -2,6 +2,9 @@
 Configure the OpenAI Agents SDK to use the local Ollama endpoint for the Gemma model, 
 and set up a console-based tracing processor to print trace information to the console 
 instead of uploading it to OpenAI's platform (keep all information local).
+
+TIP: Keep gemma_model and set_trace_processors(...) at the top of every script in 
+later exercises — every Agent(...) definition should pass model=gemma_model .
 """
 
 from agents import OpenAIChatCompletionsModel, set_trace_processors
