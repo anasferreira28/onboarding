@@ -16,6 +16,4 @@ def ask_gemma(prompt: str, model: str = "gemma4:e2b") -> str:
 
 summarize_prompt = ("Summarize this paper's methods, key result, and one limitation in under 150 words.\n\n" + paper_text)
 
-print(ask_qwen(summarize_prompt))
-
 print(ask_gemma(summarize_prompt))

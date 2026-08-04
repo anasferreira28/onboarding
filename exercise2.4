@@ -12,5 +12,45 @@ Helper scripts:
 
 >>> Qwen:
 
+**Methods:** Researchers engineered an autonomous AI agent using GPT-4 integrated with multimodal oncology tools (vision transformers for histopathology biomarker prediction, MedSAM for radiology segmentation, web search, OncoKB, and a calculator) alongside retrieval-augmented generation (RAG) indexing ~6,800 clinical guidelines. The system was tested on 20 simulated, multimodal oncology cases requiring multi-step clinical reasoning.
+
+**Key Result:** The agent autonomously selected appropriate tools with 87.5% accuracy, reached correct clinical conclusions in 91.0% of cases, and accurately cited guidelines 75.5% of the time. Compared to standalone GPT-4, tool integration drastically improved response completeness and accuracy from 30.3% to 87.2%.
+
+**Limitation:** Evaluation relied on only 20 manually crafted, simulated patient cases rather than real-world clinical data, restricting generalizability and necessitating larger-scale, prospective validation before clinical deployment.
+
 
 >>> Gemma: 
+
+This excerpt provides extensive information regarding the authorship, funding sources, competing interests, methodology context, and key findings of a scientific article.
+
+Here is a summary of the main components:
+
+### 1. Authorship and Contributions
+The text details the roles of the various authors in the research:
+*   **D.F.** designed and performed the experiments, evaluated results, and wrote the initial draft.
+*   **D.T. and J.N.K.** designed and supervised the experiments and wrote the manuscript.
+*   Other authors contributed to scientific support, manuscript writing, model evaluation, and providing feedback.
+
+### 2. Funding and Disclosures
+The research was supported by numerous organizations, including:
+*   German Federal Ministry of Education and Research (TRANSFORM LIVER)
+*   European Union’s Horizon Europe and Innovation program (ODELIA, GENIAL)
+*   National Institute for Health and Care Research (NIHR)
+*   Various German ministries and research foundations.
+*   Specific support from institutions like Lothian NHS, the Mildre-Scheel-Postdoktorandenprogramm of the German Cancer Aid, and the TUM School of Medicine.
+
+**AI Disclosure:** The authors explicitly state that **GPT-4 (OpenAI)** was used solely for checking spelling and grammar during the writing process.
+
+### 3. Competing Interests
+Several authors declare potential conflicts of interest, including:
+*   Shares in companies such as **StratifAI** and **Synagen**.
+*   Honoraria received from major pharmaceutical companies like AstraZeneca, Bayer, Eisai, MSD, BMS, Roche, Pfizer, and Fresenius.
+
+### 4. Key Experimental Findings (From Supplementary Information)
+The supplementary data details an investigation into how patient characteristics affect model tool-calling behavior:
+*   **Patient Demographics:** The study analyzed simulated patient cases, examining the sex (A), age (B), and patient origin/ethnicity (C).
+*   **Origin Data Disparity:** For 55% of patients, patient origin information was not provided in the vignette (n/a), while the remaining 45% included diverse origin data.
+*   **Core Observation:** When investigating if gender, age, and origin influence tool-calling behavior by running random permutations on the cases, the authors observed that **variability in tool-calling behavior was higher for situations requiring more tools (e.g., patient Ms Xing)**, regardless of the specific combinations of age, sex, or ethnicity/origin.
+
+***
+**In essence, the excerpt outlines a study, likely related to healthcare or cancer data analysis, focusing on complex factors (like patient origin and demographics) influencing AI model behavior when making tool-calling decisions.**
