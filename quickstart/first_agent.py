@@ -48,7 +48,7 @@ async def main():
         "Who was the first emperor of Rome and when did the Roman Empire fall?",
         )
     print(result.final_output)
-    print(f"Answered by: {result.final_agent.name}")
+    print(f"Answered by: {result.last_agent.name}")
 
 if __name__ == "__main__":
     asyncio.run(main())
