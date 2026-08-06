@@ -5,9 +5,19 @@ Use a plain Agent plus Runner when the task mainly lives
 in prompts, tools and conversation state.
 """
 
+import logging
+import os
+
+# Must be set before `agents` is imported: these flags are read once at import time
+# and, when left at their default (redacted), also hide the exception details/traceback
+# for internal errors like a broken trace processor.
+os.environ.setdefault("OPENAI_AGENTS_DONT_LOG_MODEL_DATA", "false")
+os.environ.setdefault("OPENAI_AGENTS_DONT_LOG_TOOL_DATA", "false")
+logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s:%(message)s")
+
 import asyncio
 from agents import Agent, Runner, set_trace_processors
-from agents.decorators import tool 
+from agents.decorators import tool
 from local_models import ConsoleTraceProcessor, gemma_model
 
 set_trace_processors([ConsoleTraceProcessor()]) # avoids needing to set an OpenAI API key in the environment

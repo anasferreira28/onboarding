@@ -8,8 +8,8 @@ from agents import set_trace_processors
 from agents.tracing.processor_interface import TracingProcessor
 
 class ConsoleTraceProcessor(TracingProcessor):
-    def on_trace_start(self, trace): print(f"[TRACE] {trace.workflow_name} started")
-    def on_trace_end(self, trace): print(f"[TRACE] {trace.workflow_name} finished")
+    def on_trace_start(self, trace): print(f"[TRACE] {trace.name} started")
+    def on_trace_end(self, trace): print(f"[TRACE] {trace.name} finished")
     def on_span_start(self, span): print(f"  [SPAN START] {type(span.span_data).__name__}: {span.span_data}")
     def on_span_end(self, span): print(f"  [SPAN END]   {type(span.span_data).__name__}: {span.span_data}")
     def shutdown(self): pass
