@@ -239,3 +239,8 @@ with open(Path(__file__).resolve().parent / "eval_log.jsonl", "a") as f:
 # Agent reasoning makes (some) sense!
 
 # ACCURACY: 
+
+
+## CHECK PROCESS:
+# Get-Content "C:\Users\ana_s\onboarding\exercise5\agent_run.log" -Tail 50
+# Get-Process -Id 28652   # confirms it's still running (errors if it finished/died)
