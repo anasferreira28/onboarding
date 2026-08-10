@@ -26,7 +26,7 @@ def fetch_abstract(pubid: str) -> str:
     """
     return corpus.get(pubid, "Not found.")
 
-
+# Base agent 
 qa_agent = Agent(
     name = "PubMedQA Answering Agent",
     instructions = (
@@ -38,6 +38,7 @@ qa_agent = Agent(
     output_type = PubMedAnswer,
 )
 
+# Agent with tool call
 qa_agent_tool = Agent(
     name = "PubMedQA Answering Agent with Abstract Fetching",
     instructions = (
@@ -45,9 +46,39 @@ qa_agent_tool = Agent(
         "You are given a pubid."
         "Call fetch_abstract(pubid) to get the relevant context before responding."
         "Only use retrieved evidence, never outside knowledge."
+        "Always quote the key sentence(s) from the abstract that support your answer BEFORE responding."
     ),
     model = gemma_model,
     tools = [fetch_abstract],
+    output_type = PubMedAnswer,
+)
+
+# Agent with handoffs
+specialist_agent = Agent(
+    name = "PubMedQA Specialist Agent",
+    instructions = (
+        "You are a careful biomedical reasoner."
+        "Call fetch_abstract for the given pubid and reason"
+        "carefully about the quantitative results in the abstract."
+        "Then, give a YES/NO/MAYBE decision, a one-sentence rationale grounded in the context, and a confidence level (low, medium, or high) for your answer."
+    ),
+    model = gemma_model,
+    tools = [fetch_abstract],
+    output_type = PubMedAnswer,
+)
+
+triage_agent = Agent(
+    name = "PubMedQA Triage Agent",
+    instructions = (
+        "Read the questions." 
+        "if it requires careful reasoning over numeric or comparative results" 
+        "hand off to the Specialist Agent." 
+        "Otherwise, answer the question yourself with fetch_abstract." 
+
+    ),
+    model = gemma_model,
+    tools = [fetch_abstract],
+    handoffs = [specialist_agent],
     output_type = PubMedAnswer,
 )
 
@@ -68,14 +99,26 @@ example = ds[0]
 
 
 # Example 2
-result = Runner.run_sync(qa_agent_tool, f"pubid: {example['pubid']}\nQuestions: {example['question']}")
-print(result.final_output)
+# result = Runner.run_sync(qa_agent_tool, f"pubid: {example['pubid']}\nQuestions: {example['question']}")
+# print(result.final_output)
 
 # TRACING CONFIRMS FUNCTION CALL
 # [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x00000203C9412A80>
 # [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x00000203C9412A80>
 
+# First Try
 # question='Do mitochondria play a role in remodelling lace plant leaves during programmed cell death?' 
 # decision='maybe' 
 # rationale='The provided PubMed abstract for pubid: 21645374 was not found, so I cannot determine the answer based on the retrieved evidence.' 
 # confidence=0
+
+# After Fixes (much better!!)
+# question='Do mitochondria play a role in remodelling lace plant leaves during programmed cell death?' 
+# decision='yes' 
+# rationale='The abstract discusses elucidating the role of mitochondrial dynamics during developmentally regulated PCD in the lace plant (*A. madagascariensis*), which undergoes PCD resulting in leaf perforations. 
+# The study examined mitochondrial dynamics and their relationship with the stages of PCD, directly implicating mitochondria in this process.' 
+# confidence='high'
+
+# Example 3
+result = Runner.run_sync(triage_agent, f"pubid: {example['pubid']}\nQuestions: {example['question']}")
+print(result.final_output)
