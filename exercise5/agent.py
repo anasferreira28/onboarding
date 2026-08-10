@@ -13,6 +13,11 @@ from datasets import load_dataset
 ds = load_dataset("qiaojin/PubMedQA", "pqa_labeled")["train"]
 corpus = {str(example["pubid"]): " ".join(example["context"]["contexts"]) for example in ds} # corpus is originally int, so must be converted to string to it matches the requirements of the prompt and function call
 
+# Evaluation Startup
+import random
+sample = random.sample(list(ds), 30) # 30 examples from the dataset
+correct = 0
+
 class PubMedAnswer(BaseModel):
     question: str
     decision: Literal["yes", "no", "maybe"]
@@ -83,7 +88,7 @@ triage_agent = Agent(
 )
 
 # Example 1
-example = ds[0]
+example = ds[25]
 # prompt = f"Question: {example['question']}\n\nContext: {''.join(example['context']['contexts'])}"
 # result = Runner.run_sync(qa_agent, prompt)
 # print(result.final_output)
@@ -120,5 +125,28 @@ example = ds[0]
 # confidence='high'
 
 # Example 3
-result = Runner.run_sync(triage_agent, f"pubid: {example['pubid']}\nQuestions: {example['question']}")
-print(result.final_output)
+# result = Runner.run_sync(triage_agent, f"pubid: {example['pubid']}\nQuestions: {example['question']}")
+# print(result.final_output)
+
+# We verify handoff through tracing 
+#   [SPAN START] HandoffSpanData: <agents.tracing.span_data.HandoffSpanData object at 0x000002DD9C770110>
+#   [SPAN END]   HandoffSpanData: <agents.tracing.span_data.HandoffSpanData object at 0x000002DD9C770110>
+
+# question='Amblyopia: is visual loss permanent?' 
+# decision='maybe' 
+# rationale='The abstract discusses visual acuity improvement in cases related to macular degenerationand notes that improvement, 
+# when it occurs, generally remained stable over the follow-up period, but it does not explicitly state whether amblyopia leads to permanent visual loss.' 
+# confidence='low'
+
+# Example 4
+
+# Model evaluation
+for ex in sample:
+    result = Runner.run_sync(triage_agent, f"pubid: {ex['pubid']}\nQuestion: {ex['question']}")
+    pred = result.final_output.decision
+    correct += (pred == ex['final_decision'])
+    if pred != ex['final_decision']:
+        print("MISMATCH:", ex['question'])
+        print("Predicted:", pred, "| Reference:", ex['final_decision'])
+        print("Long Answer:", ex['long_answer'][:200]) # long answer up to 200 characters?
+print(f"Accuracy:: {correct}/{len(sample)} = {correct/len(sample):.1%}")
