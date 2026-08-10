@@ -18,7 +18,7 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s:%(message
 import asyncio
 from agents import Agent, Runner, set_trace_processors
 from agents.decorators import tool
-from local_models import ConsoleTraceProcessor, gemma_model
+from quickstart.local_models import ConsoleTraceProcessor, gemma_model
 
 set_trace_processors([ConsoleTraceProcessor()]) # avoids needing to set an OpenAI API key in the environment
 
