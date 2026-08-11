@@ -1,0 +1,22 @@
+The advantage of LiteLLM is to allow for the same model call to be applied to various LLMs from different sources
+Model requests are sent to a single API (Ollama)
+Avoids requests being sent to OpenAI's cloud servers ("don't go out to the Internet for this, talk to my machine instead")
+
+completion() is a wrapper function that routes the request to the right place, based on the prefix of the model string;
+The 'ollama_chat/' prefix points it towards Ollama chat request formatting
+It also normalizes the response into one consistent shape (OpenAI's response format)
+"LiteLLM translates whatever format the real backend returned into that one shape before handing it back to you."
+
+
+Although model call is the same, we are not expecting the same answer - 
+LiteLLM only standardizes the calling code (the shape of the function call/ request / response format)
+Model response depends on what each model knows, how it reasons and how it phrases things
+The decoupling between call and response - same code, swappable model - is the selling point of the library
+
+Utility:
+**Benchmarking:** identical calling code (only model string changes) keeps model comparison honest and avoids bias
+introduced by subtle differences on prompt formatting, handling retries or parse responses
+**Combining multiple models in one agentic system:** a production agent often routes different sub-tasks to different models
+according to cost/capability; with LiteLLM you can use different model backbones without having to design a specific model call for each
+**Avoid vendor lock-in:** switching SDK provider requires rewriting calling code; LiteLLM avoids this altogether (only requires a config change)
+**Production features:** automatic fallback if a provider is down or rate-limited; load-balancing across API keys; cost tracking
