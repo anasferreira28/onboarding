@@ -20,3 +20,63 @@ introduced by subtle differences on prompt formatting, handling retries or parse
 according to cost/capability; with LiteLLM you can use different model backbones without having to design a specific model call for each
 **Avoid vendor lock-in:** switching SDK provider requires rewriting calling code; LiteLLM avoids this altogether (only requires a config change)
 **Production features:** automatic fallback if a provider is down or rate-limited; load-balancing across API keys; cost tracking
+
+RESPONSES:
+
+>>> Gemma
+
+**BI-RADS (Breast Imaging Reporting and Data System)** is a standardized method used by radiologists to classify the findings of breast imaging (mammograms, ultrasound, MRI). 
+These categories help standardize reporting and guide clinical decisions regarding further testing or biopsies.
+
+Here is a brief overview of the main BI-RADS categories:
+
+---
+
+### The Six Primary Categories
+
+| Category | Description | Clinical Implication / Next Steps |
+| :--- | :--- | :--- |
+| **0** | **Insufficient Information** | The image quality is inadequate, and further imaging is required before a diagnosis can be made. |
+| **1** | **Negative** | The imaging findings are negative for malignancy (no suspicious masses or lesions found). |
+| **2** | **Benign Finding** | The finding is clearly benign (non-cancerous). Follow-up may be recommended based on clinical history. |
+| **3** | **Probably Benign** | The finding is probably benign, but requires short-interval follow-up imaging (usually 6 months) to confirm stability. |
+| **4** | **Suspicious** | The finding is suspicious for malignancy and needs further investigation. This usually requires a biopsy or additional targeted imaging. |
+| **5** | **Highly Suggestive of Malignancy** | The findings are highly suggestive of cancer. A biopsy is strongly recommended to obtain a definitive diagnosis. |
+| **6** | **Known Malignancy** | The patient has a known history of cancer in the area, and the current findings correlate with that history. |
+
+---
+
+### Key Takeaway
+
+The BI-RADS score communicates the **probability of malignancy**. A lower number indicates less concern (e.g., 1 or 2), while a higher number indicates a greater likelihood of cancer (e.g., 4 or 5).
+
+>>> Qwen - more complete response (sub-categories), less word repetition and more professional language
+
+The BI-RADS (Breast Imaging-Reporting and Data System) categories are a standardized framework used by radiologists to classify breast imaging findings (e.g., mammograms, ultrasounds, MRIs) and guide clinical management. Here's a brief overview of the categories:
+
+1. **BI-RADS 0**: **Incomplete Assessment**  
+   - Requires additional imaging (e.g., follow-up or another modality) to clarify findings due to insufficient data.
+
+2. **BI-RADS 1**: **Negative**  
+   - No abnormalities detected; imaging is normal. No further action needed unless there are other risk factors.
+
+3. **BI-RADS 2**: **Benign Finding**  
+   - Confirmed benign lesion (e.g., simple cyst, non-malignant calcification). No further action required.
+
+4. **BI-RADS 3**: **Probably Benign**  
+   - Low suspicion for malignancy (e.g., suspicious calcification). Recommend follow-up imaging in 6 months.
+
+5. **BI-RADS 4**: **Suspicious Abnormality**  
+   - Intermediate suspicion for malignancy (divided into subcategories:  
+     - **4A**: Low suspicion (e.g., suspicious calcification)  
+     - **4B**: Moderate suspicion (e.g., irregular mass)  
+     - **4C**: High suspicion (e.g., complex lesion)  
+   - Biopsy or further imaging is typically recommended.
+
+6. **BI-RADS 5**: **High Suspicion for Malignancy**  
+   - Strong likelihood of cancer (e.g., spiculated mass, malignant calcifications). Biopsy is strongly advised.
+
+7. **BI-RADS 6**: **Malignant**  
+   - Confirmed cancer via biopsy. Proceed with treatment planning.
+
+**Purpose**: BI-RADS ensures consistent reporting, guides patient management, and helps prioritize follow-up or intervention based on risk levels.
