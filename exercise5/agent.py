@@ -14,6 +14,9 @@ from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
 
+from agents.exceptions import ModelBehaviorError
+from pydantic import ValidationError
+
 # Dataset Startup
 from datasets import load_dataset
 ds = load_dataset("qiaojin/PubMedQA", "pqa_labeled")["train"]
@@ -56,7 +59,7 @@ qa_agent = Agent(
         "Example: if RESULTS states 'frequent consumption was associated with a dose-dependent increase in symptoms', and the question asks whether X is a risk factor, the decision is YES, even if CONCLUSIONS also lists limitations of the study."
     ),
     model = gemma_model,
-    model_settings = ModelSettings(temperature=0.1),
+    model_settings = ModelSettings(temperature=0.1, frequency_penalty=0.4), # frequency penalty discourages word repetition by penalizing tokens based on how many times they have already appeared in the generated output; positive values force a varied vocabulary, while negative values encourage repetition.
     output_type = PubMedAnswer,
 )
 
@@ -74,7 +77,7 @@ qa_agent_tool = Agent(
         "Example: if RESULTS states 'frequent consumption was associated with a dose-dependent increase in symptoms', and the question asks whether X is a risk factor, the decision is YES, even if CONCLUSIONS also lists limitations of the study."
     ),
     model = gemma_model,
-    model_settings = ModelSettings(temperature=0.1),
+    model_settings = ModelSettings(temperature=0.1, frequency_penalty=0.4),
     tools = [fetch_abstract],
     output_type = PubMedAnswer,
 )
@@ -90,10 +93,11 @@ specialist_agent = Agent(
         "2) Find the sentence(s) in the RESULTS/CONCLUSIONS section stating which one the results favor, and by how much. "
         "3) State that direction explicitly in your rationale before giving a decision. "
         "Only answer MAYBE if the numeric results themselves are mixed or inconclusive -- never because the comparison is merely complex. "
+        "Report numbers and comparisons in plain text only (e.g. 'increased by 15%', 'group A had 6 vs group B had 3') -- never use LaTeX, markdown math, or symbols like \\text{} or $...$. " # avoid the degenerate JSON error
         "Then give a YES/NO/MAYBE decision, a one-sentence rationale grounded in the context, and a confidence level (low, medium, or high) for your answer."
     ),
     model = gemma_model,
-    model_settings = ModelSettings(temperature=0.1),
+    model_settings = ModelSettings(temperature=0.1, frequency_penalty=0.4),
     tools = [fetch_abstract],
     output_type = PubMedAnswer,
 )
@@ -107,7 +111,7 @@ triage_agent = Agent(
         "Otherwise, answer the question yourself: call fetch_abstract(pubid) and give a YES/NO/MAYBE decision, a one-sentence rationale grounded in the context, and a confidence level (low, medium, or high)."
     ),
     model = gemma_model,
-    model_settings = ModelSettings(temperature=0.1),
+    model_settings = ModelSettings(temperature=0.1, frequency_penalty=0.4),
     tools = [fetch_abstract],
     handoffs = [specialist_agent],
     output_type = PubMedAnswer,
@@ -169,10 +173,25 @@ example = ds[25]
 # Model evaluation
 def run_eval(agent, sample, name):
     correct = 0
+    attempted = 0
     confusion = defaultdict(lambda: defaultdict(int)) # confusion[reference][predicted] = count
     mismatches = []
+    errors = []
     for ex in sample:
-        result = Runner.run_sync(agent, f"pubid: {ex['pubid']}\nQuestion: {ex['question']}")
+        prompt = f"pubid: {ex['pubid']}\nQuestion: {ex['question']}"
+        result = None
+        last_error = None
+        for attempt in range(2): # one retry -- covers a one-off decoding glitch (e.g. repetition loop breaking the output JSON)
+            try:
+                result = Runner.run_sync(agent, prompt)
+                break
+            except (ModelBehaviorError, ValidationError) as e:
+                last_error = e
+                print(f"WARNING [{name}] generation failed for pubid {ex['pubid']} (attempt {attempt + 1}/2): {e}")
+        if result is None:
+            errors.append({"question": ex['question'], "pubid": ex['pubid'], "error": str(last_error)})
+            continue
+        attempted += 1
         pred = result.final_output.decision
         actual = ex['final_decision']
         confusion[actual][pred] += 1
@@ -182,14 +201,14 @@ def run_eval(agent, sample, name):
             print("MISMATCH:", ex['question'])
             print("Predicted:", pred, "| Reference:", actual)
             print("Long Answer:", ex['long_answer'][:200]) # long answer up to 200 characters?
-    accuracy = correct / len(sample)
+    accuracy = correct / attempted if attempted else 0.0
     labels = ["yes", "no", "maybe"]
-    print(f"\n[{name}] Accuracy: {correct}/{len(sample)} = {accuracy:.1%}")
+    print(f"\n[{name}] Accuracy: {correct}/{attempted} = {accuracy:.1%} ({len(errors)} skipped after failing generation)")
     print(f"[{name}] Confusion matrix (rows=reference, cols=predicted):")
     for actual in labels:
         row = " ".join(f"{label}={confusion[actual][label]}" for label in labels)
         print(f"  {actual:>5}: {row}")
-    return {"name": name, "accuracy": accuracy, "confusion": {a: dict(confusion[a]) for a in labels}, "mismatches": mismatches}
+    return {"name": name, "accuracy": accuracy, "attempted": attempted, "confusion": {a: dict(confusion[a]) for a in labels}, "mismatches": mismatches, "errors": errors}
 
 label_counts = Counter(ex['final_decision'] for ex in sample)
 majority_label, majority_count = label_counts.most_common(1)[0]
