@@ -10,6 +10,7 @@ from local_models import gemma_model
 
 # Stdlib for evaluation/logging
 import json
+import os
 from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
@@ -31,7 +32,7 @@ corpus = {
 
 # Evaluation Startup
 EVAL_SEED = 42
-EVAL_N = 50
+EVAL_N = 5
 sample = ds.shuffle(seed=EVAL_SEED).select(range(EVAL_N)) # deterministic sample so accuracy is reproducible across runs
 
 class PubMedAnswer(BaseModel):
@@ -215,18 +216,28 @@ majority_label, majority_count = label_counts.most_common(1)[0]
 majority_baseline = majority_count / len(sample)
 print(f"Majority-class baseline (\"always predict {majority_label}\"): {majority_count}/{len(sample)} = {majority_baseline:.1%}")
 
-tool_results = run_eval(qa_agent_tool, sample, "qa_agent_tool")
-triage_results = run_eval(triage_agent, sample, "triage_agent")
+def save_eval_result(result):
+    # Called right after each agent's run_eval finishes, not after both --
+    # a run of 2x50 examples takes long enough that a crash/timeout/closed
+    # terminal partway through used to mean losing every result.
+    log_entry = {
+        "timestamp": datetime.now().isoformat(),
+        "seed": EVAL_SEED,
+        "n": EVAL_N,
+        "majority_baseline": majority_baseline,
+        "run": result,
+    }
+    log_path = Path(__file__).resolve().parent / "eval_log.jsonl"
+    with open(log_path, "a") as f:
+        f.write(json.dumps(log_entry) + "\n")
+        f.flush()
+        os.fsync(f.fileno()) # force it to disk immediately, don't rely on process exit to flush buffers
 
-log_entry = {
-    "timestamp": datetime.now().isoformat(),
-    "seed": EVAL_SEED,
-    "n": EVAL_N,
-    "majority_baseline": majority_baseline,
-    "runs": [tool_results, triage_results],
-}
-with open(Path(__file__).resolve().parent / "eval_log.jsonl", "a") as f:
-    f.write(json.dumps(log_entry) + "\n")
+tool_results = run_eval(qa_agent_tool, sample, "qa_agent_tool")
+save_eval_result(tool_results)
+
+triage_results = run_eval(triage_agent, sample, "triage_agent")
+save_eval_result(triage_results)
 
 # Three mismatch examples
 # MISMATCH: The effective orifice area/patient aortic annulus area ratio: a better way to compare different bioprostheses?

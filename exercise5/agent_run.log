@@ -254,3 +254,602 @@ Long Answer: The palliative treatment concept of 25 Gy applied in 5 fractions 
   [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E3F070>
   [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83C50>
   [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83250>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD79B0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD79B0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83250>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD66F0>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F1523FBB0>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F151F3D90>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F151FD130>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82A30>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD66F0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD66F0>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83A70>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83A70>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82A30>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83CA0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD62D0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD62D0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83CA0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F151FD130>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F151F3D90>
+[TRACE] Agent workflow finished
+MISMATCH: Are WHO/UNAIDS/UNICEF-recommended replacement milks for infants of HIV-infected mothers appropriate in the South African context?
+Predicted: maybe | Reference: no
+Long Answer: No home-prepared replacement milks in South Africa meet all estimated micronutrient and essential fatty acid requirements of infants aged<6 months. Commercial infant formula is the only replacement mi
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F151F3890>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F151FD130>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82D00>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F151F3BB0>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F151F3BB0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82D00>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83CA0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5310>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5310>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83CA0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F151FD130>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F151F3890>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83520>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F151FD130>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83CA0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5310>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5310>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E3C370>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E3C370>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83CA0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E833E0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD66F0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD66F0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E833E0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F151FD130>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83520>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E3C370>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F151FD130>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83D40>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD66F0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD66F0>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E3C230>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E3C230>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83D40>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E838E0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD62D0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD62D0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E838E0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F151FD130>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E3C370>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83A70>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD7110>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83CA0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5490>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5490>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F1523FBB0>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F1523FBB0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83CA0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E839D0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E839D0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD7110>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83A70>
+[TRACE] Agent workflow finished
+MISMATCH: Major depression and alcohol use disorder in adolescence: Does comorbidity lead to poorer outcomes of depression?
+Predicted: yes | Reference: no
+Long Answer: The results of these analyses suggest that marginally higher rates of depression to age 35 amongst the comorbid MD/AUD group were explained by increased exposure to adverse childhood circumstances amo
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F1523FBB0>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD7230>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83DE0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6C30>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6C30>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F1523F3E0>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F1523F3E0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83DE0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E833E0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E833E0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD7230>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F1523FBB0>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82D00>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6F90>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E835C0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6AB0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6AB0>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F1523FBB0>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F1523FBB0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E835C0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83A70>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83A70>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6F90>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82D00>
+[TRACE] Agent workflow finished
+MISMATCH: Are octogenarians at high risk for carotid endarterectomy?
+Predicted: yes | Reference: no
+Long Answer: Combined end points for adverse events are acceptable in the octogenarian. Carotid endarterectomy remains the gold standard for treatment of extracranial carotid disease in all age groups. Age alone s
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82FD0>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6AB0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83A70>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82990>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82990>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83A70>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83D40>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83D40>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6AB0>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82FD0>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83890>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6B70>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E831B0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F151F3D90>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F151F3D90>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E831B0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82D00>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82D00>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83890>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E835C0>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6E10>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82D00>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82F80>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82F80>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82D00>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E825D0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6F90>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6F90>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E825D0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E835C0>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82FD0>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD75F0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82D00>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F151F3BB0>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F151F3BB0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82D00>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82850>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6AB0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6AB0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82850>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82FD0>
+[TRACE] Agent workflow finished
+MISMATCH: Syncope during bathing in infants, a pediatric form of water-induced urticaria?
+Predicted: no | Reference: yes
+Long Answer: "Aquagenic maladies" could be a pediatric form of the aquagenic urticaria.
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83D40>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD7590>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82B20>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6F90>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6F90>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83930>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83930>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82B20>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83D90>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83D90>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83D40>
+[TRACE] Agent workflow finished
+MISMATCH: Does laparoscopic cholecystectomy influence peri-sinusoidal cell activity?
+Predicted: maybe | Reference: yes
+Long Answer: Laparoscopic procedures caused detectable damage to Kupffer and endothelial cells as reflected by elevation of post-operative HA serum levels. The damage to the liver hepatocytes and perisinusoidal ce
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83C00>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6F90>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83FC0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6AB0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6AB0>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E828A0>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E828A0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83FC0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82940>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82940>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6F90>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83C00>
+[TRACE] Agent workflow finished
+MISMATCH: Is adjustment for reporting heterogeneity necessary in sleep disorders?
+Predicted: yes | Reference: no
+Long Answer: Sleep disorders are common in the general adult population of Japan. Correction for reporting heterogeneity using anchoring vignettes is not a necessary tool for proper management of sleep and energy 
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E833E0>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6AB0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83430>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83A70>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83A70>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83430>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83E80>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83E80>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6AB0>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E833E0>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E829E0>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6B70>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E838E0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83C00>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83C00>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E838E0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83D90>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83D90>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E829E0>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E836B0>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6E10>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82D50>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82990>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82990>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82D50>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E838E0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5310>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5310>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E838E0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E836B0>
+[TRACE] Agent workflow finished
+MISMATCH: Do Surrogates of Injury Severity Influence the Occurrence of Heterotopic Ossification in Fractures of the Acetabulum?
+Predicted: no | Reference: maybe
+Long Answer: Surrogates of injury severity, including days in the ICU and non-ICU hospital LOS>10 days, were associated with the development of HO in our cohort of acetabular fracture patients. Prophylaxis with XR
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83A20>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD75F0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82850>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82A30>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82A30>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82850>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E831B0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6F90>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6F90>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E831B0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83A20>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83F70>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD7590>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E831B0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5310>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5310>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83570>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83570>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E831B0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82FD0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82FD0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83F70>
+[TRACE] Agent workflow finished
+MISMATCH: Telemedicine and type 1 diabetes: is technology per se sufficient to improve glycaemic control?
+Predicted: maybe | Reference: yes
+Long Answer: The Diabeo system improved glycaemic control in both high and low users who avidly used the IDA function, while the greatest improvement was seen in the low users who had the motivational support of t
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82D50>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD5310>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EACA50>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6F90>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6F90>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83D90>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83D90>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EACA50>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83B10>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5370>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5370>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83B10>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD5310>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82D50>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83CA0>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6F90>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E828F0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83840>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83840>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E828F0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82CB0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82CB0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6F90>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83CA0>
+[TRACE] Agent workflow finished
+MISMATCH: Is ganglionated plexi ablation during Maze IV procedure beneficial for postoperative long-term stable sinus rhythm?
+Predicted: maybe | Reference: no
+Long Answer: GP ablation did not prove to be beneficial for postoperative stable NSR. A complete left atrial lesion set and biatrial ablation are advisable for improving rhythm outcomes. Randomized controlled tria
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83AC0>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6B70>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83FC0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5370>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5370>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E829E0>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E829E0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83FC0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E831B0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E831B0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83AC0>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83C00>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD75F0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E831B0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83A20>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83A20>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E831B0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83CF0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83CF0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83C00>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E828A0>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6E10>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EAC1E0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5370>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5370>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83A70>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83A70>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EAC1E0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82B20>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82B20>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E828A0>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83F20>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD5370>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82D50>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82FD0>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82FD0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82D50>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83750>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6F90>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6F90>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83750>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD5370>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83F20>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82A30>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6B70>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EAC910>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83840>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83840>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EAC910>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83160>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83160>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82A30>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82800>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD7590>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83A70>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6F90>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6F90>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83430>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83430>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83A70>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E834D0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E834D0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82800>
+[TRACE] Agent workflow finished
+MISMATCH: Medical student education in emergency medicine: do students meet the national standards for clinical encounters of selected core conditions?
+Predicted: maybe | Reference: no
+Long Answer: Most students do not encounter all 10 conditions during patient encounters throughout a 4-week EM rotation, although most have exposure to at least eight. Certain conditions are far less likely than o
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E831B0>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD75F0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EAC280>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82D50>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82D50>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EAC280>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82A30>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6AB0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6AB0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82A30>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E831B0>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83890>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6AB0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83840>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E828F0>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E828F0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83840>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E825D0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5370>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5370>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E825D0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6AB0>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83890>
+[TRACE] Agent workflow finished
+MISMATCH: Is nasogastric decompression useful in prevention of leaks after laparoscopic sleeve gastrectomy?
+Predicted: maybe | Reference: no
+Long Answer: Routine placement of nasogastric tube in patients operated of LSG seems not useful in reducing leaks' incidence.
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82850>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD7590>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EAC910>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E829E0>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E829E0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EAC910>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82A30>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82A30>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82850>
+[TRACE] Agent workflow finished
+MISMATCH: Is laparoscopic sonography a reliable and sensitive procedure for staging colorectal cancer?
+Predicted: maybe | Reference: yes
+Long Answer: The results obtained in this study demonstrate that LUS is an accurate and highly sensitive procedure in staging colorectal cancer, providing a useful and reliable diagnostic tool complementary to lap
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E837F0>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD5370>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83E30>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82DF0>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82DF0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83E30>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83B10>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83B10>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD5370>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E837F0>
+[TRACE] Agent workflow finished
+MISMATCH: Is irritable bowel syndrome a diagnosis of exclusion?
+Predicted: no | Reference: maybe
+Long Answer: Most community providers believe IBS is a diagnosis of exclusion; this belief is associated with increased resource use. Experts comply more closely with guidelines to diagnose IBS with minimal testin
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83B10>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6E10>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EACAA0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5370>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD5370>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83890>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83890>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EACAA0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82940>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD62D0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD62D0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82940>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83B10>
+[TRACE] Agent workflow finished
+MISMATCH: Does the radiographic transition zone correlate with the level of aganglionosis on the specimen in Hirschsprung's disease?
+Predicted: yes | Reference: no
+Long Answer: Correlation between level of radiographic transition zone on contrast enema and length of aganglionosis remains low. Systematic preoperative biopsy by coelioscopy or ombilical incision is mandatory.
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83E80>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD75F0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83F20>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6E10>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E831B0>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E831B0>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E83F20>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E829E0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E829E0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83E80>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83390>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD62D0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EAD130>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD75F0>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82D50>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E82D50>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EAD130>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82FD0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6C30>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD6C30>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E82FD0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD62D0>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E83390>
+[TRACE] Agent workflow finished
+MISMATCH: Prognosis of low-tone sudden deafness - does it inevitably progress to Meniere's disease?
+Predicted: maybe | Reference: no
+Long Answer: We conclude that not all low-tone sudden deafness (SD) patients suffered from endolymphatic hydrops even if they had vertigo attack at the onset and that electrocochleography (ECochG) was a useful pro
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82D50>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6B70>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E831B0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD62D0>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD62D0>
+  [SPAN START] FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83E80>
+  [SPAN END]   FunctionSpanData: <agents.tracing.span_data.FunctionSpanData object at 0x0000021F15E83E80>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E831B0>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E829E0>
+  [SPAN START] GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   GenerationSpanData: <agents.tracing.span_data.GenerationSpanData object at 0x0000021F15DD7590>
+  [SPAN END]   TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15E829E0>
+  [SPAN END]   AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6B70>
+  [SPAN END]   TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82D50>
+[TRACE] Agent workflow finished
+[TRACE] Agent workflow started
+  [SPAN START] TaskSpanData: <agents.tracing.span_data.TaskSpanData object at 0x0000021F15E82A30>
+  [SPAN START] AgentSpanData: <agents.tracing.span_data.AgentSpanData object at 0x0000021F15DD6C30>
+  [SPAN START] TurnSpanData: <agents.tracing.span_data.TurnSpanData object at 0x0000021F15EAC820>
